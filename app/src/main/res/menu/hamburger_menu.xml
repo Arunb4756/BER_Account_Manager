@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <group
         android:id="@+id/group1"
         android:checkableBehavior="single">
-
         <item
             android:id="@+id/nav_home"
             android:title="@string/group1_Home" />
@@ -13,15 +13,25 @@
             <menu>
                 <item
                     android:id="@+id/simple_calc"
-                    android:title= "@string/simple_calc" />
+                    android:title="@string/simple_calc" />
                 <item
                     android:id="@+id/SI_calc"
                     android:title="@string/interest_calculator" />
-
-
             </menu>
+
         </item>
 
+        <item
+            android:id="@+id/exp_category"
+            android:title="@string/exp_category" />
+        <item
+            android:id="@+id/show_records"
+            android:title="@string/show_records"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/save_pdf"
+            android:title="@string/save_pdf"
+            app:showAsAction="never" />
         <item
             android:id="@+id/nav_io"
             android:title="@string/group1_io" />
@@ -37,5 +47,13 @@
         <item
             android:id="@+id/nav_contact"
             android:title="@string/group1_contact" />
+        <item
+            android:id="@+id/share"
+            android:title="@string/share"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rate"
+            android:title="@string/rate"
+            app:showAsAction="never" />
     </group>
 </menu>
